@@ -1,0 +1,58 @@
+/*  Creat your Framework */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.parent {
+    background-color: #eee;
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    margin: 20px auto;
+    
+
+}
+
+.parent div {
+    background-color: green;
+
+}
+
+.product {
+    background-color: red;
+   
+    
+   
+}
+
+.ceneter_postion{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+.circle_100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.circle_200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.center_Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

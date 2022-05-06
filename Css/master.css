@@ -1,0 +1,92 @@
+/* this is the frist class */
+div {
+    /* background-color: #ff00dd; */
+    /* background-image: url("../image/nice.jpg"); */
+    /* background-repeat:repeat-x; */
+    /* background-size: contain; */
+    background-color: black;
+   
+    height: auto;
+    width: auto;
+    padding: 20px 0;
+    font-size: 20px ;arial;tahoma;
+    /* margin: 10px 0; */
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    background-color: #efefef;
+    color: black;
+   padding: 10px;
+     margin: 10px;
+     width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   border-width: 6px 10px;
+   border-style: solid dashed;
+   border-color: red green;
+}
+body {
+    background-color: blanchedalmond;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0;
+    margin: 0;
+}
+a {
+ color: white;
+ text-decoration: none;
+}
+.interface_design {
+    background-color: teal;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    font-family: Arial,tahoma;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.page_class{
+    background-color: #f3fafa;
+    color: white;
+    background-image: url("../image/nice.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.test {
+    background-color: #f4f4f4;
+    color: red;
+    text-align:center;
+    font-size: bold;
+    width:300px;
+    padding: 10px;
+    border:#f4f4f4 solid 10px;
+    outline: 10px solid blue;
+border-radius: 20px;
+}
+
+/* .vis_list {
+    background-color: royalblue;
+    color: black;
+  
+} */
+
+ a {
+     background-color: blueviolet;
+     text-align: center;
+     height: 20px;
+ }
+ /* ul {
+     display: none;
+ } */
+
+ .de_list {
+     background-color: black;
+     color: white;
+ }

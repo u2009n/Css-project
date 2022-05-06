@@ -1,0 +1,8 @@
+a:hover {
+    color: red;
+    pointer-events:visible;
+}
+
+* {
+    caret-color: red;
+}

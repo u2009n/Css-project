@@ -1,0 +1,126 @@
+/* 
+
+Transform.Orgin
+syntax
+Defult Value => (50% , 50% ,0)
+2D Transform => Transform.orgin (x ,y)
+3D Transform => Transform.orgin (x ,y,z)
+X-Axis
+-.Css Unit [px,em,erm]
+-.%
+-.Keyword
+-.Left:0%
+-.Ceneter:50%
+-.Right:100%
+Y-Axis
+-.Css Unit [px,em,erm]
+-.%
+-.Keyword
+-.Top:0%
+-.Ceneter:50%
+-.Bottom:100%
+
+--------------
+3D Transfer
+-.Translate
+-.perspectiv
+-.perspectiv.orgin
+
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shape {
+    position: absolute;
+    background-color: #EEE;  /*    pespective:300px
+                                     perspective.orgin:left bottom   */
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+ .shape .X-Axis:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: -20px;
+    position: absolute;
+
+} 
+.shape .X-Axis:after {
+    content: "X-Axis";
+    background-color:#fff;
+    left: 50%;
+    bottom: -28px;
+    position: absolute;
+    transform: translatex(-50%);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.shape .Y-Axis:before {
+    content: '';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    background-color: black;
+    left: -20px;
+}
+
+.shape .Y-Axis:after {
+    content: "Y-Axis";
+    position: absolute;
+    background-color:#fff;
+    top: 50%;
+    left: -28px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    transform: translateY(-50%);
+    writing-mode: vertical-lr;
+}
+
+.shape .Z-Axis:bottom.left {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: -20px;
+    /* transform: translateZ(-50%); */
+
+}
+
+.shape > div {
+    background-color:rgb(255 0 0 / 39%);
+    color: white;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 5%;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.5s;  /*transform:translate3d(0,0,100px) ;*/
+    
+}   
+
+.shape .orgin {
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}

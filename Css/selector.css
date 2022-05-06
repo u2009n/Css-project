@@ -1,0 +1,161 @@
+/* Selector
+==============
+== Part.1 ==
+==============
+-. *
+-. Elment =>[p ,h ,div]
+-. Elment other Elment => div p
+-. Class_Name 
+-. #id_Name
+-. parent .child
+-. Class_one.Class_two
+-. Class_Name Div , Class_Name p
+-. Elment.Class_Name
+-. Parent > .Child => Direct Child
+===============
+== Part.2 ==
+===============
+-. Elment + Other Elment => [div+p]
+-. Elment ~ Other Elment => [p ~ div]
+-. [Attribute]
+-. Elment[Attribute]
+-. [Attribute=Value]
+-. Elment[Attribute=Value] => input[type="submit"]
+-. [Attribute~=Value] =>  Contains A word
+-. [Attribute*=Value] =>  Contains A Strang
+-. [Attribute^=Value] =>  Start with  A Strang
+================
+== Part.3 ==
+================
+-. :first-child
+-. :last-child
+-. :first-of-type
+-. :last-of-type
+-. :only-child
+===============
+== Part.4 == 
+===============
+-. not(selectors)
+-. :nth-child(n ,even,odd)
+-. :nth-last-child(n)
+-. :nth-of-type(n)
+================
+== part.5 ==
+===============
+-. :root
+-. :checked
+-. :empty
+-. :required
+-. :foucs
+-. ::selection
+-. ::placeholder
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* .parent > .child {
+    color: red;
+}
+
+div + p {
+    color: red;
+}
+p ~ div {
+    color: blue;
+} */
+
+[title~="div"] {
+    color: red;
+}
+[title="pragrph"] {
+    color: blue;
+}
+
+[title*="pr"] {
+    color: chocolate;
+}
+[title^="fi"] {
+    color: crimson;
+}
+
+p:first-of-type {
+    color: cyan;
+}
+
+/* p:last-child {
+    color:blue;
+}
+div:last-of-type {
+    color:#7575fc;
+}
+/* p:not(:first-child){
+    color: darkgoldenrod;
+} 
+
+div:not(.spical) {
+    color: red;
+}
+
+p:nth-child(2) {
+    color: yellow;
+}
+
+p:nth-last-child(1) {
+    color:#959591
+}
+    /* div:nth-last-child(7) {
+        color: red;
+    } 
+
+    p:nth-of-type(3) {
+        color: red;
+    }
+
+    div:nth-of-type(1) {
+        color:red
+    } */
+
+    input[type="checkbox"]:checked + label {
+        color:red;
+    }
+
+    div:empty {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+
+    input:disabled {
+        color: red;
+    }
+
+  input:disabled + span:before {
+      content: '*';
+      color: red;
+  }
+
+  input:focus {
+      border: 2px solid red;
+  }
+
+  div::selection {
+      color: #eee;
+      background-color: black;
+
+  }
+
+  ::placeholder {
+      color: red;
+  }

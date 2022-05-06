@@ -1,0 +1,40 @@
+
+ div {
+     margin: 50px auto;
+     width: 400px;
+     background-color: #eee;
+     white-space: nowrap;
+     overflow:hidden;
+     text-overflow: ellipsis;
+
+ }
+.master {
+    font-size: 40px;
+    text-shadow: 2px 1px 0 red;    
+}
+
+.one {
+    font-size: 60px;
+   text-transform: uppercase;
+}
+
+.two {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.three {
+    font-size: 30px;
+}
+
+a {
+    margin: 50px auto;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px;
+    background-color:rgb(34, 58, 34);
+    color: white;
+    text-decoration: none;
+    border-bottom-width: 5px;
+    border-bottom-color: green;
+}

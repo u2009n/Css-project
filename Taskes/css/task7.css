@@ -1,0 +1,66 @@
+.parent {
+    
+    width: 800px;
+    overflow: hidden;
+}
+
+.parent div {
+    padding-top: 15px;
+    padding-bottom: 15PX;
+    background-color: #eee;
+    float: left;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 1%;
+   
+}
+.parent .one {
+    width: 98%;
+    
+  
+
+}
+
+.parent .tow,
+.parent .three,
+.parent .four {
+    width: 32%;
+}
+
+.parent .six,
+.parent .five {
+    width: 49%;
+}
+
+.parent .seven,
+.parent .eight,
+.parent .nein,
+.parent .ten {
+    width: 24%;
+}
+
+.ope {
+    margin: 20px auto;
+    width: 800px;
+    
+}
+
+.ope div {
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 2%;
+    text-align: start;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ope .one {
+    background-color: grey;
+}
+
+.ope .two {
+    background-color: rgb(240, 229, 241);
+}
+.ope .three {
+    background-color: #eee;
+    opacity: .2;
+}

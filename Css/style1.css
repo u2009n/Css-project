@@ -1,0 +1,48 @@
+
+/* * {
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+
+} */
+
+
+.parent {
+ background-color: #eee;
+ height: 200px;
+ margin: auto;
+ width: 600px;
+ padding: 10px;
+ overflow: hidden;
+
+}
+.parent .one,
+.parent .tow {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+.one {
+    background-color:#aaa;
+    color: black;
+}
+.tow {
+    background-color:#ddd;
+    color: black;
+}
+/* .up {
+    background-color:green;
+   columns: white;
+   height: 50%;
+}
+
+.down {
+    background-color: red;
+   color: white;
+   height: 50%;
+} */

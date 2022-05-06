@@ -1,0 +1,49 @@
+.one {
+    background-color: red;
+    color: black;
+    padding: 10px;
+}
+a {
+    background-color: #eee;
+    text-decoration: none;
+
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: seagreen;
+}
+
+.ch:checked {
+display: none;}
+
+.two {
+    background-color: #EEE;
+    width: 200px;
+    height: 50px;
+}
+
+.in {
+    border: 2px soli black;
+
+}
+.in:focus {
+    border: 2px soli red;
+    outline: none;
+}
+.frist::first-letter {
+    background-color: red;
+    color: black;
+    font-size: 60px;
+}
+.frist::first-line {
+
+    background: yellow;
+    color: black;
+    font-size: 50px;
+}
+::selection {
+    background: black;
+    color: whitesmoke;
+}

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+.parent {
+    width: 550px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.parent .first_Child,
+.parent .second_Child {
+    width: 210px;
+    height: 350px;
+    background-color: #eee;
+    float: left;
+    margin-left: 47px;
+}
+
+.basic ,.pro {
+    width: 180px;
+    height: 40px;
+    background-color: rgb(137, 137, 209);
+    color: white;
+    text-align: center;
+    margin: 20px 15px ;
+    border-radius: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.free ,.price {
+    width: 180px;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 50px 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_Child :before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    top: -20px;
+    height: 350px;
+    background-color:  #0d0da06e;
+    left: -40px;
+}
+
+.second_Child :after {
+    position: absolute;
+    content: 'OR';
+    width:40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    top: 125px;
+    left: -58px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

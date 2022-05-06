@@ -1,0 +1,19 @@
+div {
+    margin: 40px auto;
+    background-color: #ddd;
+    width: 500px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+    position: relative;
+}
+
+div::before {
+    position: absolute;
+    content: '1';
+    left:0;
+    top: 50%;
+    background-color: red;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+}

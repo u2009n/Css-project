@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.3s ease;
+    filter:grayscale(100%); 
+}
+    img:hover {
+    filter: grayscale(0);
+}

@@ -1,0 +1,22 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+.Navgation {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.Navgation.menu {
+    width: 500px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    float: left;
+}
+.Navgation.submenu {
+    display: none;
+
+}

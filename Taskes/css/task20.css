@@ -1,0 +1,26 @@
+* {
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.center-flex {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+.center-position {
+    text-align: center;
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

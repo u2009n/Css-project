@@ -1,0 +1,82 @@
+p {
+    background-color: #eee;
+    padding: 2rem;
+    width: 800px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    border-left: 5px solid  rgb(141, 23, 88);
+}
+
+p:first-of-type::before {
+    position: absolute;
+    content: 'Osama';
+    background-color: #ccc;
+    height: fit-content;
+    padding: 1.5rem;
+    top: 0;
+    left: -50px; 
+    transform: translate(-100%,10%);
+} 
+
+p:nth-of-type(2)::before {
+    position: absolute;
+    content: 'Ahmed';
+    background-color: #ccc;
+    height: fit-content;
+    padding: 1.5rem;
+    top: 0;
+    left: -50px; 
+    transform: translate(-100%,10%);
+} 
+
+p:last-of-type::before {
+    position: absolute;
+    content: 'Sayed';
+    background-color: #ccc;
+    height: fit-content;
+    padding: 1.5rem;
+    top: 0;
+    left: -50px; 
+    transform: translate(-100%,10%);
+} 
+
+p:first-of-type::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px ;
+    border-color: transparent  rgb(141, 23, 88) transparent transparent;
+    border-style: solid;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+p:nth-of-type(2)::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 15px ;
+        border-color: transparent rgb(141, 23, 88) transparent transparent;
+        border-style: solid;
+        left: -35px;
+        top: 50%;
+        transform: translateY(-50%);
+}
+p:last-of-type::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px ;
+    border-color: transparent  rgb(141, 23, 88)transparent transparent;
+    border-style: solid;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+} 

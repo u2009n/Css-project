@@ -1,0 +1,7 @@
+* {
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+div[title]:nth-last-child(>=5) {
+    color: red;
+}

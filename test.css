@@ -1,0 +1,17 @@
+.zhal {
+    background-color: #fff;
+    height: 50px;
+    color:rebeccapurple;
+    text-align: center;
+    justify-content: bottom;
+    padding-top: 10px;
+    position: relative;
+
+}
+
+
+.lin {  
+    background: -webkit-linear-gradient(to right,#fcb045,#fd1d1d,#833ab4);
+    background: linear-gradient(to right,#fd1d1d 50%,#833ab4 50%);
+    height: 2px;
+}

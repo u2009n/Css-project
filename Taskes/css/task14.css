@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.grid {
+    margin: 50px auto;
+    background-color: #ddd;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows: 60px 1fr;
+    gap: 10px;
+    
+  }
+
+  .grid div {
+      position: relative;
+      color: white;
+      font-size: 20px;
+      background-color:rgb(40, 92, 143);
+      text-align: center;
+
+  }
+
+  .grid div::after {
+      position: absolute;
+      content: 'Elment';
+      padding: 10px;
+  }
+
+ 
+  .layout {
+      display: grid;
+      margin: 10px auto;
+      width: 800px;
+      height: 400px;
+      background-color: #ddd;
+      grid-auto-columns: repeat(8,1fr);
+      grid-template-areas: "header header header header header header header header" 
+                          " section section section section section section  Aside Aside"
+                           "footer footer footer footer footer footer footer footer";
+      grid-template-rows: 10% 1fr 10% ;
+
+  }
+
+  header {
+      position: relative;
+      grid-area: header;
+      background-color: red;
+  }
+  header::after {
+      position: absolute;
+      content: 'Header';
+  }
+
+  section {
+      position: relative;
+      grid-area: section;
+      background-color: green;
+
+  }
+  section::after {
+    position: absolute;
+    content: 'Section';
+}
+
+  aside {
+      position: relative;
+      grid-area: Aside;
+      background-color: grey;
+  }
+
+  aside::after {
+    position: absolute;
+    content: 'aside';
+}
+
+  footer {
+      position: relative;
+      grid-area: footer;
+      background-color: black;
+      color: white;
+  }
+
+  footer::after {
+    position: absolute;
+    content: 'Footer';
+}

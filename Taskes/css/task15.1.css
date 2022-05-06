@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    text-align: center;
+    font-size: 2rem;
+    font-weight:bold;
+    position: relative;
+    border-radius: 50%;
+}
+
+ div::before {
+    position: absolute;
+    content: '';
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    border: 10px;
+    border-style: solid;
+    border-color: red red red transparent;
+    transform: rotate(.5turn);
+
+} 
+
+ 
+  div::after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border:10px;
+    border-style: solid;
+    border-color: blue transparent blue blue;
+    transform: rotate(.5turn);
+} 
+
+div:hover {
+   transform:rotate(.5turn) ;
+}

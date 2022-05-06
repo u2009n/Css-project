@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    margin: 150px auto;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: transform 1s  ease;
+    perspective: 400px;
+    position: relative;
+}
+
+div::before {
+position: absolute;
+content: 'Front';
+font-size: 30px;
+background-color: rgb(204, 77, 145);
+color: white;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+transform: rotateY(180deg);
+}
+
+div::after {
+ position: absolute;
+content: 'Back';
+font-size: 30px;
+background-color: blue;
+color: white;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+div:hover {
+    transform: rotateY(-180deg);
+}
+
+

@@ -1,0 +1,21 @@
+
+
+.parent {
+    background-color: #eee;
+    width: 400px;
+    height: 300px;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.parent .child{
+background-color: blue;
+width: 150px;
+height: 100px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%) skewy(20deg);
+box-shadow: 0px 0px 20px 2px #33A7F4;
+}

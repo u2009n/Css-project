@@ -1,0 +1,122 @@
+.User {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    float: left;
+   
+}
+.one {
+    background-color: #eee;
+    width: 700px;
+    height: 80px;
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    
+    
+}
+.parent {
+    margin-bottom: 20px;
+     overflow: hidden;
+     counter-increment: counter_element;
+}
+hr {
+    margin: 20px 0;
+}
+
+.one::after {
+    content: counter(counter_element);
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    color: white;
+    right: -30px;
+    text-align: center;
+    top: 50%;
+    margin-top: -10px;
+
+
+    /* background-color: green;
+    width: 4px;
+    height: 100%;
+    right: -5px;
+    top: 0px;
+    position: absolute;*/
+} 
+.one::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    margin-top: -10px;
+    border: 10px ;
+    border-color:   transparent green transparent transparent;
+    border-style: solid; 
+    
+
+
+}
+.one:hover::before {
+  content: "this link";
+  
+    
+}
+ul {
+list-style: none;}
+
+ul li {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+ul li::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    margin-top: -10px;
+    border: 10px ;
+    border-color:   transparent green transparent transparent;
+    border-style: solid; 
+    
+    
+}
+
+/* div {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    BOX-shadow: 0px 0px 10px 20px #EEE,
+    0px 0px 0px 20px red,   
+     0px 0px 10px 20px black;
+
+
+} */
+
+.parent {
+    background-color: #ddd;
+    width: 300px;
+    margin: 20px auto;
+
+}
+.one {
+    background-color: #eee;
+    color: black;
+    text-align: center;
+    float: left;
+}
+/* Example */
+

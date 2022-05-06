@@ -1,0 +1,38 @@
+.one {
+    background-color: red;
+    color: white;
+    position: fixed;
+    padding: 0px;
+    bottom: 0;
+    right: 0;
+
+
+}
+
+.two {
+    background-color: green;
+    color: white;
+}
+
+div {
+  background-color: red;
+  color: white;
+    height: 20px;
+   
+}
+.parent {
+    background-color: blue;
+    color: white;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+}
+p {
+    background-color: #EEE;
+    padding: 10px;
+}
+
+body {
+    min-height: 1700px;
+}

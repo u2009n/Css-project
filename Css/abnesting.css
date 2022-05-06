@@ -1,0 +1,30 @@
+.dir_right , 
+.dir_left {
+    
+   background-color: #efefee;
+   text-shadow: 0 0 1px black;
+   margin: 10px 0;
+   width: 300px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   /* text-transform:capitalize;
+   text-indent: 30px;
+   width: 500px;
+   letter-spacing: 4px;
+   word-spacing: 2px;
+  line-height: 1.5;
+  */
+   
+}
+.dir_right {
+direction: rtl;
+color: black;
+}
+
+.dir_left {
+    direction: ltr;
+    color: red;
+}
+
+

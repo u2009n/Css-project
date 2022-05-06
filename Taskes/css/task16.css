@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+     --mainColor:orange;
+ }
+h1 {
+    margin: 70px auto;
+    background-color: var(--mainColor,black);
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    transform:scaleX(-5px)
+    
+}
+
+h1::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%; 
+    background-color: var(--mainColor);
+    transform: skewy(20deg) rotateX(25deg);
+    z-index: -1;
+
+}
+h1::after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%; 
+    background-color: var(--mainColor);
+    transform: skewy(-20deg) rotateX(-25deg);
+    z-index: -1;
+}
+
+div {
+    margin: 150px auto;
+    /* width: 150px;
+    height: 75px; */
+    /* background-color: gray; */
+    position: relative;
+}
+ div::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 57px ;
+    border-style: solid;
+    border-color:  transparent gray transparent gray gray;
+    
+    
+}
+
+/*div::after{
+    position: absolute;
+    content: 'Elzero';
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    left: -32px;
+    top: 124%;
+    width: 136%;
+    height: 60%;
+    background-color: gray; 
+    border-top: 100px solid red;
+    border-right:50px solid gray ;
+    border-left: 59px solid gray;
+
+}
+    

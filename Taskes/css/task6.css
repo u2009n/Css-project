@@ -1,0 +1,25 @@
+
+:root {
+    var font0px;
+}
+.one {
+    margin: 50px auto;
+    width: 700px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.one .one {
+ 
+    font-style: italic;
+    font-size: 3.4rem;
+}
+.one .two {
+    font-style: bold;
+    font-size: 2.5rem;
+}
+
+.one .three {
+    font-size: 1.9rem;
+    font-style: bold;
+}

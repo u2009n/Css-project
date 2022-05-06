@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 50px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    background-color: #eee;
+    flex-direction: column;
+
+}
+
+.parent div {
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    height: 20%;
+    margin: 3%;
+    text-align: center;
+}
+
+.one ,.three  {
+    align-self: flex-end;
+}
+.two {
+    align-self: flex-start;
+    width: 50%;
+   
+}
+
+.parent2 {
+margin: 50px auto;
+width: 600px;
+height: 300px;
+display: flex;
+background-color: #eee;
+justify-content: space-evenly;
+}
+
+.parent2 div {
+    display: flex;
+    color: white;
+    font-size: 50px;
+    height: 50%;
+    width: calc(80% / 4);
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.one2 {
+    background-color: orange;
+    order: 2;
+   
+}
+
+.two2 {
+    background-color: green;
+    order: 4;
+    align-self: flex-end;
+}
+
+.three2 {
+    background-color: maroon;
+    order: 4;
+}
+
+.four2 {
+    background-color: rgb(26, 26, 66);
+    align-self: flex-end;
+}
+

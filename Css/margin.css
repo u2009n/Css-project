@@ -1,0 +1,41 @@
+.parent {
+    overflow: hidden;
+   background-color: #eee;
+   margin: 0 auto;
+   width: 400px;
+   height: 200px;
+   padding: 10px;
+
+}
+
+.parent .One,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+  
+}
+
+.one {
+    background-color:#ddd;
+}
+
+.two {
+    background-color: #aaa;
+}
+
+.UP{
+    background-color: green;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+
+
+}
+.DOWN{
+    background-color:red;
+    width: 100%;
+    height: 90px;
+    margin-top: 20px;
+
+}

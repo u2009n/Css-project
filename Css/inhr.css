@@ -1,0 +1,77 @@
+
+.bg_blue {
+   background-color: blue;
+
+}
+.circle {
+    margin: 25px 10px;
+    width: 200px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 200px; 
+    text-align: center;
+    height: 200px; 
+    border-radius: 100px;
+
+}
+.bg_green {
+
+    background-color: green;
+}
+
+.span3 {
+    width: 220px;
+}
+
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+.circles img {
+    margin-top: 2%px;
+}
+ img {
+     vertical-align: middle;
+     border:0;
+
+ }
+ button {
+     background-color: transparent;
+     border:none;
+     font-size: BOLD;
+     color:red;
+     cursor:pointer;
+     font-weight: bold;
+ }
+
+ p {
+     cursor:zoom-out }
+
+     .parent {
+         background-color: red;
+         padding: 10px;
+         overflow: hidden;
+     }
+      div {
+         background-color: rgb(116, 111, 111);
+         padding-top: 10px;
+         padding-bottom: 10px;
+         text-align: center;
+         width: calc((100% - 25px) / 4);
+         color: white;
+         float: left;
+         margin-left: 5px;
+     }
+     .clear {
+         clear: both;
+     }
+     body {
+         margin: 0;
+     }
+
+     p {
+         margin: 1px;
+         text-align: center;
+         color: red;
+        

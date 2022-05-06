@@ -1,0 +1,116 @@
+
+/* Grid
+   Parent
+   - display: grid ; inline-block
+   -  grid-template-columns: => [Nummber of columns] => [px ,% ,auto , Farktion ,repeat() , max ]
+   -  grid-template-Rows: => [Nummber of Rows] => [px ,% ,auto , Farktion ,repeat() , max ]
+   -  grid-template: Rows / column
+
+   -  gab:[Rows Gab] [column Gab]
+   -  justfiy-content:=>[flix-start,flex-end,center,space-between,space-around]
+   -  alig-content:=>[flix-start,flex-end,center,space-between,space-around]
+   -  grid-template-areas: very area along rows;
+   Child
+   -  Grid-column:=> [1 / 2,3,..] or [span 2.... or 1 /span 4..].[Grid column start] [Gird column End]
+   -  Grid-Rows:=> [1 / 2,3,..] or [span 2.... or 1 /span 4..]. [Grid Rows start] [Gird Rows End] 
+   -  Grid-area:[Grid Rows start] [Grid column start] [Grid Rows End] [Grid column End] 
+                [row-str / col-str / row-end /col-end]
+
+
+
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    background-color: #EEE;
+    margin: 20px auto;
+    width: 800px;
+    grid-template-columns: repeat(6,auto);
+    /* row-gap: 10px;
+    column-gap: 10px; */
+
+    gap: 10px;
+    justify-content: space-between;
+    /* align-content:space-between; */
+    
+}
+
+.parent div {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.one {
+    grid-column: span 3;
+    
+}
+
+.two {
+    grid-row: 2 / span 3;
+}
+
+.secondparent {
+    display: grid;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #DDD;
+    grid-template-columns: repeat(6,auto);
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px;
+}
+.secondparent div {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+ .nein { 
+    background-color: black;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 6;
+}
+
+.thredparent {
+    background-color:#EEE;
+    margin:20px auto;
+    padding: 0;
+    width: 600px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:"head head head head head" "cont cont cont  nav nav" "sec sec sec sec sec" "fot fot fot fot fot";
+
+}
+
+.thredparent div {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+.thone {
+    grid-area: head;
+}
+.thtwo {
+    grid-area: cont;
+}
+
+.ththree {
+    grid-area: nav;
+}
+
+.thfive {
+    grid-row-start: sec;
+    grid-column-start: sec;
+    grid-row-end: fot;
+    grid-column-end: sec;
+}

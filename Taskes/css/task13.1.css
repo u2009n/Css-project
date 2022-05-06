@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 40px auto;
+    width: 600px;
+    background-color: white;
+    position: relative;
+
+}
+
+input {
+    padding: 20px;
+    margin-bottom: 2px;
+    width: 600px;
+    background-color: #eee;
+    font-size: 20px;
+    border: 0;
+    caret-color: red;
+}
+
+div::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,red 50%,green 50%,green 100%);
+}
+
+input:hover {
+    border: none;
+}

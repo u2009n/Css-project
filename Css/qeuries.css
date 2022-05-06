@@ -1,0 +1,100 @@
+
+/* Media Qeuries
+   Responsev Design
+   -. Cocept of width
+   -. Mobile
+   -. Small Screens
+   -. Medium Screens
+   -. Large Screenss
+   -. Feutur Updates
+   ====================
+   -. Mobile First
+   -. Device Test
+   ====================
+
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.parent > div {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+/* .parent {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.parent > div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 20px;
+    /* width: calc(96% / 4);
+    width: 240px;
+
+} */
+
+
+/* @media screen and (min-width: 700px) and (max-width: 800px) {
+    .parent > div {
+     background-color: blue;
+    }
+} */
+
+    /* Mobile */
+
+@media screen and(max-width: 767px) {
+
+}
+  
+    /* Small Screens */
+   
+@media screen and (min-width: 700px) {
+    .parent > div {
+        width: calc(50% - 10px);
+
+    }
+    
+}
+
+    /* Medium Screens */
+
+@media screen and (min-width: 992px)  {
+    .parent > div {
+        width: calc(25% - 10px);
+    }
+}
+
+     /* Large Screens */
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+  /* X Large Screens */
+
+  @media screen and (min-width: 1400px) {
+    
+}
+
+

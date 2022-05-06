@@ -1,0 +1,89 @@
+div {
+    position: relative;
+    margin: 50px auto;
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #eee;
+    border: 3px;
+    border-style: solid;
+    border-color: red blue; */
+}
+
+span {
+    position: absolute;
+    background-color: blue;
+    padding: 5px 15px;
+    text-align: center;
+}
+.top-left {
+    
+    top: 0;;
+    left: 0;
+    border-right: 3px solid red;
+    transform: translate(-50%,-50%);
+   
+} 
+
+.top-right {
+    right: 0;
+    top: 0;
+    border-left: 3px solid red;
+    transform: translate(50%,-50%);
+
+}
+
+.bottom-left {
+   bottom: 0;
+   left: 0;
+   border-right: 3px solid red;
+   transform: translate(-50%, 50%);
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-left: 3px solid red;
+    transform: translate(50%,50%);
+}
+
+ul  {
+    margin: 20px auto;
+    list-style: none;
+    font-size: 20px;
+    /* padding:10px; */
+    /* margin: 10px; */
+}
+
+ul li {
+    background-color: #eee;
+    border-bottom: 5px solid #eee;
+    border-right: 5px solid #eee;
+    margin-bottom: 10px;
+
+}
+
+ ul ol  li ,
+ul ul li {
+    padding: 10px;
+    background-color: white;
+    
+  
+}
+
+ol.one  {
+    OL 
+    list-style-type: decimal;
+    
+}
+ ol.two {
+    list-style-type:armenian;
+}
+ 
+ 
+
+ul li ul li  {
+    background-color: white;
+    list-style-type: circle;
+    list-style-position: inside;
+} 

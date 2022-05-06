@@ -1,0 +1,142 @@
+/*
+   FlexBox
+   Flex Parent: 
+    -disply flex=> to start Flex Box
+    -flex-dirction:  Row =>Defult value
+    -flex-warp: nowrap =>Defult Value
+    -flex-flow:[Flex-Dirction] * [Flex-Wrap]
+    ------------------------------------------
+    -justfay-content:flex-start => Defult Value
+    -align-item:stretch =>Defult Value
+    -align-content:stretch => Defult Value
+   For Child:
+    -Felx-Grow:0 => Defult value
+    -Felx-Shrink:1 => Defult value
+    -flex-basis:auto =>Defult Value
+    -Flex:[Flex-Grow] [Flex-shrink] [Flex-basis]: 0,1,auto
+    -align-self:auto =<Defult Value
+        
+*/
+:Root integer:color;
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    background-color: #ddd;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+.flex div {
+    background-color: red;
+    width: calc(100%/3);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.flot {
+    overflow: hidden;
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    background-color: #ddd;
+}
+.flot div {
+    background-color: red;
+    float: left;
+    width: calc(96%/3);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+/* .two {
+    margin-left: 1%;
+    margin-right: 1%;
+
+} */
+.flex .one {
+    height: 80px;
+
+}
+.flex .two {
+    height: 120px;
+}
+
+.center {
+    background-color: blue;
+    color: white;
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.flex_Content {
+    background-color: #ddd;
+    color: white;
+    display: flex;
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
+
+}
+
+.flex_Content div {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% / 3);
+
+}
+
+.flex_Grow {
+    background-color: #eee;
+    width: 500px;
+    display: inline-flex;
+    margin: 20px auto;
+    padding: 20px;
+    flex-basis: auto;
+    
+
+}
+
+.flex_Grow div {
+    background-color: red;
+    width: 80px;
+    margin-right: 5px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.in {
+    display: inline-block;
+}
+
+.align_item {
+ background-color:#ddd;
+ width: 400px;
+ height: 300px;
+ display: flex;
+ padding: 20px;
+ align-items: flex-start;
+}
+.align_item div {
+ background-color: red;
+ width: 80px;
+ padding: 10px;
+ margin-right: 5px;
+}

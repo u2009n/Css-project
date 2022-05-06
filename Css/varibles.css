@@ -1,0 +1,43 @@
+
+
+:root {
+    --mainColor:blue;
+    --mainPadding: 40px;
+
+}
+
+
+
+.main {
+    height: 30px;
+    padding: var(--mainPadding);
+    margin: 20px 0;
+    background-color:var(--mainColor,black);
+   color: white;
+
+}
+
+  h2 { 
+    background-color: #ddd;
+    color: green;
+    padding: calc(10px + var(--mainPadding));
+}
+
+p {
+    background-color: white;
+    border:3px solid  green;
+    color: green;
+    padding: 10px;
+    font-size: 30px;
+}
+
+a:hover {
+    color: green;
+}
+
+.local {
+    --mainColor:black;
+    color: white;
+    background-color: var(--mainColor);
+    padding: calc(4px + var(--mainPadding ));
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.parent > div {
+ width: 100%;
+ padding: 10px;
+ background-color: #eee;
+ color: rgb(30, 109, 112);
+ font-weight: bold;
+ margin-bottom: 10px;
+ text-align: center;
+
+}
+
+p {
+    color: black;
+    font-weight: normal;
+}
+
+@media  screen and (max-width:676px) {
+    .parent > div {
+        width:100%;
+        color: black;
+    }
+}
+
+@media  screen and (min-width:700px) {
+    .parent .one {
+        width:100%;
+        color: red;
+    }
+    .parent .two,
+    .parent .three,
+    .parent .four {
+        width:calc(30% - 10px);
+        color:red
+    }
+}
+@media  screen and (min-width:999px) {
+    .parent .one, 
+    .parent .four {
+        width:100%;
+        color: rgb(30, 109, 112);
+      
+    }
+    .parent .two,
+    .parent .three {
+        width: calc(50% -20px);
+        color: rgb(30, 109, 112);
+    }
+
+}

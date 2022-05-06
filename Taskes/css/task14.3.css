@@ -1,0 +1,95 @@
+ * {
+     box-sizing: border-box;
+     margin: 10px;
+ }
+
+ .grid {
+     margin: 20px auto;
+     display: grid;
+     grid-template-columns: repeat(4,25%);
+     grid-template-rows: repeat(4,auto);
+     background-color: #eee;
+     padding: 30px;
+     border: 2px solid #ddd;
+ }
+
+ .grid div {
+     margin: 4px;
+     padding: 10px;
+     position: relative;
+ }
+
+ .one {
+     background-color: white;
+     grid-column: span 2;
+     color: black;
+ }
+
+ .two {
+     background-color: white;
+ }
+ .three {
+     grid-row:  span 3;
+     background-color: black;
+     color: white;
+ }
+
+ .four {
+     grid-row: span 2;
+     background-color: white;
+     color: black;
+ }
+ .five{
+    background-color: black;
+    grid-column: span 2;
+    color: white;
+
+ }
+
+ .six {
+     grid-column: span 2;
+     background-color: white;
+     color: black;
+ }
+
+ 
+ .eight {
+     background-color: black;
+     color: white;
+ }
+
+ .seven,
+ .neun,
+ .ten {
+     background-color: white;
+ }
+ .job {
+     color: rgb(168, 158, 158);
+     font-weight: bold;
+ }
+
+ .grid div::after {
+     position: absolute;
+     content: '';
+     width: 100%;
+     height: 3px;
+     background-color: red;
+     left: 0;
+     bottom: 0;
+
+ }
+
+ .grid div:before {
+     position: absolute;
+     content: '``';
+     width: fit-content;
+     height: 10px;
+     left: 90%;
+     bottom: 3%;
+     transform: rotatex(120deg);
+ }
+
+ .det {
+     font-family: sans-serif;
+     color:darkgray;
+ }

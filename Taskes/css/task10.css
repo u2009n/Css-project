@@ -1,0 +1,55 @@
+div {
+    position: relative;
+    margin: 40px auto;
+    width: 100px;
+    height: 100px;
+    padding-top: 3rem;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 50%;
+    float: left;
+    margin-left: 40px;
+    box-shadow: 0 3px 0 3px blue, 3px 0 0 3px red;
+}
+
+ div::before {
+   
+}
+
+.one:before {
+ content: '1';   
+ position: absolute;
+ padding: 1rem;
+ border-radius: 50%;
+ background-color: black;
+ color: white;
+ top:-20px;
+ left: 0;
+
+}
+
+
+.two:before {
+    content: '2';   
+    position: absolute;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    top:-20px;
+    left: 0;
+   
+   }
+
+   .three:before {
+    content: '3';   
+    position: absolute;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    top:-20px;
+    left: 0;
+   
+   }
+
